@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <%= form_with url: serach_path, method: :get, local: true do |f| %>
+    <%= f.search_field :search %>
+    <%= f.submit %>
+  <% end %>
+<% end 
